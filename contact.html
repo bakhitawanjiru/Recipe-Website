@@ -8,6 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
 <style>
     .sty {
@@ -18,76 +19,128 @@
     }
   </style>
 </head>
-<body ">
-    <nav style="background-color: #f2dadf">
-        <div>
-          <img
-            src="logo.png"
-            alt="logo"
-            width="100px"
-            height="100px"
-          />
-        </div>
-        <div class="sty">
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html" style="color: black"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="categories.html" style="color: black"
-                >Categories</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="recipe.html" style="color: black"
-                >Recipes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" style="color: black"
-                >Contact us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div>
-       <h2 style=" text-align: center;"> How Can We Help You? </h2>
-<p style=" font-size: 20px;"> <b>Recipe Questions: Need help with a recipe?</b>  Let us know if you need clarification or tips to make your dish perfect! <br>
+<body >
+  <nav class="navbar navbar-expand-lg" style="background-color: #f2dadf; ">
+    <div class="container-fluid">
+      <img src="logo.png" alt="logo" height="70px" width="70px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipe.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <h2 style=" text-align: center;"> How Can We Help You? </h2>
+<p style=" font-size: 20px;margin-left: 20px;" > <b>Recipe Questions: Need help with a recipe?</b>  Let us know if you need clarification or tips to make your dish perfect! <br>
 <b>Suggestions:</b> Have a recipe idea, or want to see more of a certain type of cuisine? We're always open to new ideas. <br>
- <b>Feedback:</b> We appreciate your thoughts and feedback! Share your experience and let us know how we can improve. <br>
- <b>Partnerships & Collaborations:</b> If you're interested in working together or have a business inquiry, we’d love to discuss. </p>
+<b>Feedback:</b> We appreciate your thoughts and feedback! Share your experience and let us know how we can improve. <br>
+<b>Partnerships & Collaborations:</b> If you're interested in working together or have a business inquiry, we’d love to discuss. </p>
+   </div>
+  <form>
+    <!--Section: Contact v.2-->
+<section class="mb-4" style="padding-left: 200px; padding-right: 200px; padding-top: 100px;background-color: #f2dadf; margin: auto;border-radius: 40px;margin-top: 60px; margin-left: 200px; margin-right: 200px;">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <label for="name" class="" style="font-size: 20px;">Your name</label>
+                          <input type="text" id="name" name="name" class="form-control" width="100px">
+                        
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <label for="email" class="" style="font-size: 20px;">Your email</label>
+                          <input type="text" id="email" name="email" class="form-control">
+                         
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <label for="subject" class="" style="font-size: 20px;">Subject</label>
+                          <input type="text" id="subject" name="subject" class="form-control">
+
+                      </div>
+                  </div>
+              </div>
+              
+
+              
+              <div class="row">
+
+              
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                        <label for="message" style="font-size: 20px;">Your message</label>
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        
+                      </div>
+
+                  </div>
+              </div>
+              
+
+          </form>
+          <br>
+          <div class="text-center text-md-left">
+              <a data-mdb-ripple-init class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Submit</a>
+          </div>
+          <div class="status"></div>
       </div>
-      <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px;" ></textarea>
-        <label for="floatingTextarea2" style="font-size: 20px;">Comment on some of the recipes</label>
-        <button type="submit" class="btn btn-primary" style="border-radius: 10px; background-color: #f2dadf; color: black;">Submit</button>
+    
+
+      
+      <div class="col-md-3 text-center">
+          <img src="ramen.jpg" alt="ramen" width="200px" height="250px">
       </div>
+      
+
+  </div>
+
+</section>
+
+     
+     
       <br>
       <div>
 <div style="text-align: center;">
      <h2 style="text-align: center;">Get In Touch:</h2>  
      <br>
 <b>Email: </b> <p style="font-size: 20px;">beautifulbites@gmail.com </p>
-<b>Social Media:</b> <p style="font-size: 20px;"> All our social media is beautifulbites</p>
+<b>Social Media:</b> <p style="font-size: 20px;"> All our social medias are @beautifulbites</p>
 <br>
-<p style="font-size: 20px;">Alternatively, fill out the form below, and we’ll get back to you as soon as possible.</p>
 </div>
-<form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label" style="font-size: 20px;">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label" style="font-size: 20px;">phone number</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <button type="submit" class="btn btn-primary" style="border-radius: 10px; background-color: #f2dadf; color: black;">Submit</button>
-  </form>
-
 
        <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

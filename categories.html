@@ -20,41 +20,23 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <nav style="background-color: #f2dadf">
-        <div>
-          <img
-            src="logo.png"
-            alt="logo"
-            width="100px"
-            height="100px"
-          />
-        </div>
-        <div class="sty">
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html" style="color: black"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="categories.html" style="color: black"
-                >Categories</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="recipe.html" style="color: black"
-                >Recipes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" style="color: black"
-                >Contact us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="container">
+  <nav class="navbar navbar-expand-lg" style="background-color: #f2dadf;">
+    <div class="container-fluid">
+      <img src="logo.png" alt="logo" height="70px" width="70px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipe.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <div class="container" style="margin-bottom: 100px;">
         <div class="row">
           <div class="col" style="font-size: 20px">
             Welcome to our categories page, designed with busy children, students, and working professionals in mind! We know that time is precious, so we’ve curated a variety of recipes that are quick, easy, and perfect for any lifestyle. From fun and nutritious snacks for kids to simple, budget-friendly meals for students, and energizing, on-the-go options for professionals, there's something here for everyone. Whether you’re looking for a stress-free dinner after a long day, a lunch that’s easy to pack, or a snack that satisfies cravings, our categories make it easy to find exactly what you need, all while keeping your day on track.
@@ -64,6 +46,9 @@
             
           </div>
         </div>
+        <br>
+        <br>
+
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
